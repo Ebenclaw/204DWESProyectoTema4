@@ -19,8 +19,8 @@
         <?php
             /*
              * @author Rebeca Sánchez Pérez
-             * @version 1.1
-             * @since 14/11/2023
+             * @version 1.2
+             * @since 15/11/2023
              */
         
             // DECLARACION E INICIALIZACION DE VARIABLES
