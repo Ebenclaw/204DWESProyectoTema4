@@ -12,15 +12,15 @@
 <body>
     <header>
         <a href="../../index.html"><img id="logo" src="../webroot/image/logo.png" alt="Logo"></a>
-        <h1>Ejercicio 5</h1>
+        <h1>Ejercicio 6</h1>
     </header>
     <main>
-        <h2>Pagina web que añade tres registros a nuestra tabla Departamento utilizando tres instrucciones insert y una transacción, de tal forma que se añadan los tres registros o no se añada ninguno</h2>
+        <h2>Pagina web que cargue registros en la tabla Departamento desde un array departamentosnuevos utilizando una consulta preparada</h2>
         <?php
             /*
              * @author Rebeca Sánchez Pérez
-             * @version 1.1
-             * @since 20/11/2023
+             * @version 1.2
+             * @since 17/11/2023
              */
             // ANOTACION: cargar la fecha con una variable en php en lugar de SQL.
         
@@ -31,54 +31,69 @@
             require_once '../config/confDB.php';            
             // La varible $entradaOK es un interruptor que recibe el valor true cuando no existe ningun error en la entrada
             $entradaOK = true;
-            
+            // El array $aRespuestas almacena los valores que son introducidos en cada input del formulario
+            $aDepartamentos =[
+                ['codDepartamento' => 'ABC',
+                'descDepartamento' => 'departamento ABC',
+                'fechaCreacionDepartamento' => 'now()',
+                'volumenNegocio' => '123',
+                'fechaBaja' => 'null'],
+                
+                ['codDepartamento' => 'ASD',
+                'descDepartamento' => 'departamento ASD',
+                'fechaCreacionDepartamento' => 'now()',
+                'volumenNegocio' => '180',
+                'fechaBaja' => 'null'],
+                
+                ['codDepartamento' => 'XYZ',
+                'descDepartamento' => 'departamento xyz',
+                'fechaCreacionDepartamento' => 'now()',
+                'volumenNegocio' => '50',
+                'fechaBaja' => 'null']
+            ];    
+                        
             // Se ataca a la base de datos
             try {
                 // Se instancia un objeto tipo PDO que establece la conexion a la base de datos con el usuario especificado
                 $miDB = new PDO('mysql:host='.IPMYSQL.'; dbname='.NOMBREDB,USUARIO,PASSWORD);
                 // Se inicia la transaccion deshabilitando el modo autocomit
                 $miDB->beginTransaction();
-                
-                // Se inicializan variables heredoc que almacenan las consultas
+                // Se inicializa una variable heredoc que almacena la consulta
                 $sql1 = <<< SQL
-                    insert into T02_Departamento values('ABC', 'departamento ABC', now(), 130, null)
+                    insert into T02_Departamento values(:codDepartamento, :descDepartamento, now(), :volumenNegocio, null)
                 SQL;
                 $sql2 = <<< SQL
-                    insert into T02_Departamento values('ASD', 'departamento ASD', now(), 150, null)
-                SQL;
-                $sql3 = <<< SQL
-                    insert into T02_Departamento values('XYZ', 'departamento XYZ', now(), 20, null)
-                SQL;
-                
-                // Consulta de visualizacion de datos
-                $sql4 = <<< SQL
                     select * from T02_Departamento
                 SQL;
-                
-                // Se preparan las consultas
-                $consulta1 = $miDB->prepare($sql1);
-                $consulta2 = $miDB->prepare($sql2);
-                $consulta3 = $miDB->prepare($sql3);
-                
-                // Se ejecutan las consultas de insercion
-                if ($consulta1->execute() && $consulta2->execute() && $consulta3->execute()) {
-                    // Se confirman los cambios si todo ha ido bien
-                    $miDB->commit();
+                // Se prepara la consulta
+                $consulta = $miDB->prepare($sql1);
+                // Se recorre el array $aDepartamentos
+                foreach($aDepartamentos as $departamento) { 
+                    // Se inicializa un array que contiene los parametros bindeados de cada registro almacenado en $aDepartamentos
+                    $parametros=[
+                        ":codDepartamento" => $departamento["codDepartamento"],
+                        ":descDepartamento" => $departamento["descDepartamento"],
+                        ":volumenNegocio" => $departamento["volumenNegocio"],
+                    ];
+                    // Se ejecuta cada registro
+                    $consulta->execute($parametros); 
                 }
+                // Se confirman los cambios si todo ha ido bien
+                $miDB->commit();
                 
                 // Se ejecuta la consulta de seleccion para mostrar los departamentos
-                $resultadoConsulta = $miDB->query($sql4);
+                $resultadoConsulta = $miDB->query($sql2);
                 // Se crea una tabla para imprimir las tuplas
                 echo('<div class="ejercicio"><h2>Departamentos:</h2><table class="ej16"><tr><th>Codigo</th><th>Descripcion</th><th>Fecha de alta</th><th>Volumen</th><th>Fecha de baja</th></tr>');
                 // Se instancia un objeto tipo PDO que almacena cada fila de la consulta
-                while ($oDepartartamento = $resultadoConsulta->fetchObject()) {
-                    echo ("<tr>");
-                    echo ("<td>" . $oDepartartamento->T02_CodDepartamento . "</td>");
-                    echo ("<td>" . $oDepartartamento->T02_FechaCreacionDepartamento . "</td>");
-                    echo ("<td>" . $oDepartartamento->T02_DescDepartamento . "</td>");
-                    echo ("<td>" . $oDepartartamento->T02_VolumenDeNegocio . "</td>");
-                    echo ("<td>" . $oDepartartamento->T02_FechaBajaDepartamento . "</td>");
-                    echo ("</tr>");
+                while($oRegistro = $resultadoConsulta->fetchObject()){
+                    echo('<tr>');
+                    echo('<td>'.$oRegistro->T02_CodDepartamento.'</td>');
+                    echo('<td>'.$oRegistro->T02_DescDepartamento.'</td>');
+                    echo('<td>'.$oRegistro->T02_FechaCreacionDepartamento.'</td>');
+                    echo('<td>'.$oRegistro->T02_VolumenDeNegocio.'</td>');
+                    echo('<td>'.$oRegistro->T02_FechaBajaDepartamento.'</td>');
+                    echo('</tr>');
                 }
                 echo('</table>');                    
                 echo('</div>');
