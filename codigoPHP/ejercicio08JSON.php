@@ -12,7 +12,7 @@
 <body>
     <header>
         <a href="../../index.html"><img id="logo" src="../webroot/image/logo.png" alt="Logo"></a>
-        <h1>Ejercicio 8</h1>
+        <h1>Ejercicio 8.1</h1>
     </header>
     <main>
         <h2>JSON: Página web que toma datos (código y descripción) de la tabla Departamento y guarda en un fichero departamento.json. (COPIA DE SEGURIDAD / EXPORTAR). El fichero exportado se encuentra en el directorio .../tmp/ del servidor</h2>
@@ -58,7 +58,7 @@
                         'descDepartamento' => $oResultado->T02_DescDepartamento,
                         'fechaCreacionDepartamento' => $oResultado->T02_FechaCreacionDepartamento,
                         'volumenDeNegocio' => $oResultado->T02_VolumenDeNegocio,
-                        'fechaBaja' => $oResultado->T02_FechaBajaDepartamento
+                        'fechaBajaDepartamento' => $oResultado->T02_FechaBajaDepartamento
                     ];
 
                     // Añadimos el array $aDepartamento al array $aDepartamentos
@@ -72,7 +72,7 @@
                 $json = json_encode($aDepartamentos, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
                 
                 // Se graban los departamento en el fichero especificado
-                if(file_put_contents("../tmp/departamentos1.json", $json)){
+                if(file_put_contents("../tmp/departamentos.json", $json)){
                     // Si no aparecen errores, se muestra un mensaje de exito
                     echo('<div class="ejercicio">Se han exportado los datos correctamente ✅</div>');
                 }else{

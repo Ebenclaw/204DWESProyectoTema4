@@ -1,0 +1,37 @@
+[
+    {
+        "codDepartamento": "ASI",
+        "descDepartamento": "Administracion de sistemas informaticos en red",
+        "fechaCreacionDepartamento": "2023-11-14 11:03:02",
+        "volumenDeNegocio": 0.1,
+        "fechaBajaDepartamento": null
+    },
+    {
+        "codDepartamento": "DAM",
+        "descDepartamento": "Desarrollo de aplicaciones multiplataforma",
+        "fechaCreacionDepartamento": "2023-11-14 11:03:02",
+        "volumenDeNegocio": 10.25,
+        "fechaBajaDepartamento": null
+    },
+    {
+        "codDepartamento": "DAW",
+        "descDepartamento": "Desarrollo de aplicaciones web",
+        "fechaCreacionDepartamento": "2023-11-14 11:03:02",
+        "volumenDeNegocio": 50.5,
+        "fechaBajaDepartamento": null
+    },
+    {
+        "codDepartamento": "PRE",
+        "descDepartamento": "Proyectos de edificacion",
+        "fechaCreacionDepartamento": "2023-11-14 11:03:02",
+        "volumenDeNegocio": 150,
+        "fechaBajaDepartamento": null
+    },
+    {
+        "codDepartamento": "SMR",
+        "descDepartamento": "Sistemas microinformarticos y redes",
+        "fechaCreacionDepartamento": "2023-11-14 11:03:02",
+        "volumenDeNegocio": 1.5,
+        "fechaBajaDepartamento": null
+    }
+]

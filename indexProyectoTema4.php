@@ -80,16 +80,16 @@
                 <td></td>
             </tr>
             <tr>
-                <td>7. JSON: Página web que toma datos (código y descripción) de un fichero json y los añade a la tabla Departamento de nuestra base de datos. (IMPORTAR). El fichero importado se encuentra en el directorio .../tmp/ del servidor</td>
-                <td></td>
-                <td></td>
+                <td>7.1. JSON: Página web que toma datos (código y descripción) de un fichero json y los añade a la tabla Departamento de nuestra base de datos. (IMPORTAR). El fichero importado se encuentra en el directorio .../tmp/ del servidor</td>
+                <td><a href="codigoPHP/ejercicio07JSON.php"><img src="webroot/image/play.png" alt="play"/></a></td>
+                <td><a href="mostrarcodigo/muestraEjercicio07JSON.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>8. JSON: Página web que toma datos (código y descripción) de la tabla Departamento y guarda en un fichero departamento.json. (COPIA DE SEGURIDAD / EXPORTAR). El fichero exportado se encuentra en el directorio .../tmp/ del servidor</td>
-                <td><a href="codigoPHP/ejercicio08.php"><img src="webroot/image/play.png" alt="play"/></a></td>
-                <td><a href="mostrarcodigo/muestraEjercicio08.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+                <td>8.1. JSON: Página web que toma datos (código y descripción) de la tabla Departamento y guarda en un fichero departamento.json. (COPIA DE SEGURIDAD / EXPORTAR). El fichero exportado se encuentra en el directorio .../tmp/ del servidor</td>
+                <td><a href="codigoPHP/ejercicio08JSON.php"><img src="webroot/image/play.png" alt="play"/></a></td>
+                <td><a href="mostrarcodigo/muestraEjercicio08JSON.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
                 <td></td>
                 <td></td>
             </tr>

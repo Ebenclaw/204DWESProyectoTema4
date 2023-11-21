@@ -62,7 +62,6 @@
                 // Si aparecen errores, se muestra por pantalla el error
                 echo('<div class="ejercicio"><span class="error">❌ Ha fallado la conexion: '. $exception->getMessage().'</span></div>');
             }
-            
         ?>
     </main>
     <footer>
