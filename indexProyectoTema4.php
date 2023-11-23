@@ -74,22 +74,22 @@
             </tr>
             <tr>
                 <td>6. Pagina web que cargue registros en la tabla Departamento desde un array departamentosnuevos utilizando una consulta preparada</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>7. Página web que toma datos (código y descripción) de un fichero xml y los añade a la tabla Departamento de nuestra base de datos. (IMPORTAR). El fichero importado se encuentra en el directorio .../tmp/ del servidor</td>
-                <td></td>
-                <td></td>
+                <td><a href="codigoPHP/ejercicio06.php"><img src="webroot/image/play.png" alt="play"/></a></td>
+                <td><a href="mostrarcodigo/muestraEjercicio06.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>8. Página web que toma datos (código y descripción) de la tabla Departamento y guarda en un fichero departamento.xml. (COPIA DE SEGURIDAD / EXPORTAR). El fichero exportado se encuentra en el directorio .../tmp/ del servidor</td>
+                <td>7.1. JSON: Página web que toma datos (código y descripción) de un fichero json y los añade a la tabla Departamento de nuestra base de datos. (IMPORTAR). El fichero importado se encuentra en el directorio .../tmp/ del servidor</td>
+                <td><a href="codigoPHP/ejercicio07JSON.php"><img src="webroot/image/play.png" alt="play"/></a></td>
+                <td><a href="mostrarcodigo/muestraEjercicio07JSON.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
                 <td></td>
                 <td></td>
+            </tr>
+            <tr>
+                <td>8.1. JSON: Página web que toma datos (código y descripción) de la tabla Departamento y guarda en un fichero departamento.json. (COPIA DE SEGURIDAD / EXPORTAR). El fichero exportado se encuentra en el directorio .../tmp/ del servidor</td>
+                <td><a href="codigoPHP/ejercicio08JSON.php"><img src="webroot/image/play.png" alt="play"/></a></td>
+                <td><a href="mostrarcodigo/muestraEjercicio08JSON.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
                 <td></td>
                 <td></td>
             </tr>
