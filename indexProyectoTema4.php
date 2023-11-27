@@ -19,7 +19,11 @@
             <caption>Ficheros de configuracion</caption>
             <tr>
                 <td>Configuracion de la base de datos PDO</td>
-                <td><a href="mostrarcodigo/muestraConf.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+                <td><a href="mostrarcodigo/muestraConfPDO.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+            <tr>
+                <td>Configuracion de la base de datos MySQLi</td>
+                <td><a href="mostrarcodigo/muestraConfMySQLi.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
             </tr>
         </table>
         <table class="tablaIndex script">

@@ -1,5 +1,5 @@
 <?php
-// Datos para la configuracion de la base de datos en el servidor del intituto
+// Datos para la configuracion de la base de datos en el servidor del instituto
 define('IPMYSQL', '192.168.20.19');
 define('NOMBREDB', 'DB204DWESProyectoTema4');
 define('USUARIO', 'user204DWESProyectoTema4');
