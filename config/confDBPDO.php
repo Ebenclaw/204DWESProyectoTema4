@@ -12,8 +12,8 @@ define('PASSWORD', 'P@ssw0rd');
 //define('PASSWORD', 'P@ssw0rd');
 
 // Datos para la configuracion de la base de datos en el servidor IONOS
-//define('IPMYSQL', '...');
+//define('IPMYSQL', 'db5014806751.hosting-data.io');
 //define('NOMBREDB', 'dbs12302420');
 //define('USUARIO', 'dbu1704580');
-//define('PASSWORD', '...');
+//define('PASSWORD', 'daw2_Sauces');
 ?>

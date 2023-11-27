@@ -19,19 +19,13 @@
         <?php
             /*
              * @author Rebeca Sánchez Pérez
-             * @version 1.2
-             * @since 06/11/2023
+             * @version 1.3
+             * @since 27/11/2023
              */
         
             // DECLARACION E INICIALIZACION DE VARIABLES
-            // La constante USUARIO almacena el nombre del usuario de la base de datos
-            define('USUARIO', 'user204DWESProyectoTema4');
-            // La constante PASSWORD almacena la contraseña del usuario de la base de datos
-            define('PASSWORD', 'P@ssw0rd');
-            // La constante IPMYSQL almacena la ip del servidor donde se encuentra la base de datos
-            define('IPMYSQL', '192.168.20.19');
-            // La constante NOMBREDB almacena el nombre de la base de datos
-            define('NOMBREDB', 'DB204DWESProyectoTema4');
+            // Se incuye la libreria de configuracion de bases de datos que almacena las constantes de la conexion
+            require_once '../config/confDBPDO.php';
             // La variable $attributes almacena los artibutos que se pueden mostrar de una base de datos
             // No se incluyen "PERSISTENT", "PREFETCH" y "TIMEOUT"
             $attributesPDO = ['AUTOCOMMIT', 'ERRMODE', 'CASE', 'CLIENT_VERSION', 'CONNECTION_STATUS',
