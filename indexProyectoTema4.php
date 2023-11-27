@@ -16,6 +16,13 @@
     </header>
     <main>
         <table class="tablaIndex script">
+            <caption>Ficheros de configuracion</caption>
+            <tr>
+                <td>Configuracion de la base de datos PDO</td>
+                <td><a href="mostrarcodigo/muestraConf.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+            </tr>
+        </table>
+        <table class="tablaIndex script">
             <caption>Scripts DB</caption>
             <tr>
                 <td>Script creación de base de datos y usuario</td>
@@ -39,10 +46,10 @@
             </tr>
             <tr>
                 <td>1. Conexión a la base de datos con la cuenta usuario y tratamiento de errores</td>
-                <td><a href="codigoPHP/ejercicio01.php"><img src="webroot/image/play.png" alt="play"/></a></td>
-                <td><a href="mostrarcodigo/muestraEjercicio01.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
-                <td></td>
-                <td></td>
+                <td><a href="codigoPHP/ejercicio01PDO.php"><img src="webroot/image/play.png" alt="play"/></a></td>
+                <td><a href="mostrarcodigo/muestraEjercicio01PDO.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+                <td><a href="codigoPHP/ejercicio01MySQLi.php"><img src="webroot/image/play.png" alt="play"/></a></td>
+                <td><a href="mostrarcodigo/muestraEjercicio01MySQLi.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
             </tr>
             <tr>
                 <td>2. Mostrar el contenido de la tabla Departamento y el número de registros</td>
@@ -98,7 +105,7 @@
     <footer>
         <div id="derechos">2023-2024 © Todos los derechos reservados: <a href="../index.html">Rebeca Sánchez Pérez</a></div>
         <div id="fotos">
-            <a href="https://github.com/Ebenclaw" target="_blank"><img id="git" src="webroot/image/GitHub.png" alt="GitHub"></a>
+            <a href="https://github.com/Ebenclaw/204DWESProyectoTema4" target="_blank"><img id="git" src="webroot/image/GitHub.png" alt="GitHub"></a>
             <a href="http://ieslossauces.centros.educa.jcyl.es/sitio/" target="_blank"><img id="sauces" src="webroot/image/sauces.png" alt="Sauces"></a>
             <a href="../204DWESProyectoDWES/indexProyectoDWES.php"><img id="home" src="webroot/image/home.png" alt="Inicio"></a>
         </div>
