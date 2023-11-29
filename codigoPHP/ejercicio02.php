@@ -25,7 +25,7 @@
         
             // DECLARACION E INICIALIZACION DE VARIABLES
             // Se incuye la libreria de configuracion de bases de datos que almacena las constantes de la conexion
-            require_once '../config/confDB.php';
+            require_once '../config/confDBPDO.php';
             
             // Se realiza el ejercicio con una consulta preparada
             try {

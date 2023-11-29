@@ -28,7 +28,7 @@
             // Se incuye la libreria de validacion para usar los metodos de validacion de las entradas del formulario
             require_once '../core/231018libreriaValidacion.php';
             // Se incuye la libreria de configuracion de bases de datos que almacena las constantes de la conexion
-            require_once '../config/confDB.php';            
+            require_once '../config/confDBPDO.php';            
             // La varible $entradaOK es un interruptor que recibe el valor true cuando no existe ningun error en la entrada
             $entradaOK = true;
             // El array $aRespuestas almacena los valores que son introducidos en cada input del formulario

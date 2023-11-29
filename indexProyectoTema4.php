@@ -29,15 +29,26 @@
         <table class="tablaIndex script">
             <caption>Scripts DB</caption>
             <tr>
+                <th>Descripcion</th>
+                <th colspan="2">EE</th>
+                <th>ED</th>
+            </tr>
+            <tr>
                 <td>Script creación de base de datos y usuario</td>
+                <td><a href="codigoPHP/.php"><img src="webroot/image/play.png" alt="ojo"/></a></td>
+                <td><a href="mostrarcodigo/muestraCrearEE.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
                 <td><a href="mostrarcodigo/muestraCrear.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
             </tr>
             <tr>
                 <td>Script carga inicial de base de datos</td>
+                <td><a href="codigoPHP/.php"><img src="webroot/image/play.png" alt="ojo"/></a></td>
+                <td><a href="mostrarcodigo/muestraCargaEE.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
                 <td><a href="mostrarcodigo/muestraCarga.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
             </tr>
             <tr>
                 <td>Script borrado de base de datos y usuario</td>
+                <td><a href="scriptDB/BorraDB204DWESProyectoTema4.php"><img src="webroot/image/play.png" alt="ojo"/></a></td>
+                <td><a href="mostrarcodigo/muestraBorraEE.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
                 <td><a href="mostrarcodigo/muestraBorra.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
             </tr>
         </table>
