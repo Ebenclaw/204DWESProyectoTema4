@@ -17,12 +17,8 @@ try {
     // Se instancia un objeto tipo PDO que establece la conexion a la base de datos con el usuario especificado
     $miDB = new PDO('mysql:host=' . IPMYSQL . '; dbname=' . NOMBREDB, USUARIO, PASSWORD);
     
-    // Consulta de uso de la base de datos
-    $sql1 = <<< SQL
-        use dbs12302420;
-    SQL;
     // Consulta de creacion de la tabla departamento
-    $sql2 = <<< SQL
+    $sql1 = <<< SQL
         create table if not exists T02_Departamento(
             T02_CodDepartamento varchar(3) primary key,
             T02_DescDepartamento varchar(255),
@@ -33,10 +29,8 @@ try {
     
     // Se preparan las consultas
     $consulta1 = $miDB->prepare($sql1);
-    $consulta2 = $miDB->prepare($sql2);
     // Se ejecutan las consultas
     $consulta1->execute();
-    $consulta2->execute();
     
 //    // Se crea una tabla para imprimir las tuplas
 //    echo('<div class="ejercicio"><h2>Con prepare() y execute():</h2><table class="ej16"><tr><th>Codigo</th><th>Descripcion</th><th>Fecha de alta</th><th>Volumen</th><th>Fecha de baja</th></tr>');
@@ -56,6 +50,7 @@ try {
 //    // Se muestra por pantalla el numero de tuplas  de la tabla departamentos
 //    echo('Numero total de registros: <b>' . $count . '</b>');
 //    echo('</div>');
+    echo('Se ha creado la tabla "T02_Departamento" correctamente ✅');
 } catch (PDOException $exception) {
     // Si aparecen errores, se muestra por pantalla el error
     echo('<div class="ejercicio"><span class="error">❌ Ha fallado la conexion: ' . $exception->getMessage() . '</span></div>');

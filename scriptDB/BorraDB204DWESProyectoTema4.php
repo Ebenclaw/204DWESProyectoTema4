@@ -51,6 +51,7 @@ try {
 //    // Se muestra por pantalla el numero de tuplas  de la tabla departamentos
 //    echo('Numero total de registros: <b>' . $count . '</b>');
 //    echo('</div>');
+    echo('Se ha borrado la tabla "T02_Departamento" correctamente ✅');
 } catch (PDOException $exception) {
     // Si aparecen errores, se muestra por pantalla el error
     echo('<div class="ejercicio"><span class="error">❌ Ha fallado la conexion: ' . $exception->getMessage() . '</span></div>');
