@@ -6,8 +6,11 @@
  */
 
 // DECLARACION E INICIALIZACION DE VARIABLES
-// Se incuye la libreria de configuracion de bases de datos que almacena las constantes de la conexion
-require_once '../config/confDBPDO.php';
+// Se definen las constantes de la configuracion de la base de datos
+define('IPMYSQL', 'db5014806751.hosting-data.io');
+define('NOMBREDB', 'dbs12302420');
+define('USUARIO', 'dbu1704580');
+define('PASSWORD', 'daw2_Sauces');
 
 // Se realiza el ejercicio con una consulta preparada
 try {
