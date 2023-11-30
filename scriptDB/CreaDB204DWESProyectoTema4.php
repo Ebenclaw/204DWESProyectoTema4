@@ -17,9 +17,8 @@ try {
     // Se instancia un objeto tipo PDO que establece la conexion a la base de datos con el usuario especificado
     $miDB = new PDO('mysql:host=' . IPMYSQL . '; dbname=' . NOMBREDB, USUARIO, PASSWORD);
     
-    // Consulta de creacion y uso de la base de datos
+    // Consulta de uso de la base de datos
     $sql1 = <<< SQL
-        create database dbs12302420;
         use dbs12302420;
     SQL;
     // Consulta de creacion de la tabla departamento
@@ -31,20 +30,13 @@ try {
             T02_VolumenDeNegocio float,
             T02_FechaBajaDepartamento datetime default null)engine=innodb;
     SQL;
-    // Consulta de creacion del usuario
-    $sql3 = <<< SQL
-        create user 'dbu1704580'@'%' identified by 'daw2_Sauces';
-        grant all privileges on dbs12302420.* to 'dbu1704580'@'%';
-    SQL;
     
     // Se preparan las consultas
     $consulta1 = $miDB->prepare($sql1);
     $consulta2 = $miDB->prepare($sql2);
-    $consulta3 = $miDB->prepare($sql3);
     // Se ejecutan las consultas
     $consulta1->execute();
     $consulta2->execute();
-    $consulta3->execute();
     
 //    // Se crea una tabla para imprimir las tuplas
 //    echo('<div class="ejercicio"><h2>Con prepare() y execute():</h2><table class="ej16"><tr><th>Codigo</th><th>Descripcion</th><th>Fecha de alta</th><th>Volumen</th><th>Fecha de baja</th></tr>');

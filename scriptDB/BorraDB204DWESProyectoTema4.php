@@ -19,11 +19,11 @@ try {
     
     // Consulta de borrado de la base de datos
     $sql1 = <<< SQL
-        drop database if exists dbs12302420;
+        use dbs12302420;
     SQL;
     // Consulta de borrado del usuario
     $sql2 = <<< SQL
-        drop user if exists 'dbu1704580'@'%';
+        drop table if exists T02_Departamento;
     SQL;
     
     // Se preparan las consultas
