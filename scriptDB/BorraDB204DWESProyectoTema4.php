@@ -17,7 +17,7 @@ try {
     // Se instancia un objeto tipo PDO que establece la conexion a la base de datos con el usuario especificado
     $miDB = new PDO('mysql:host=' . IPMYSQL . '; dbname=' . NOMBREDB, USUARIO, PASSWORD);
     
-    // Consulta de borrado del usuario
+    // Consulta de borrado de la tabla departamento
     $sql1 = <<< SQL
         drop table if exists dbs12302420.T02_Departamento;
     SQL;
