@@ -19,7 +19,7 @@ try {
     
     // Consulta de insercion de datos en la tabla departamento
     $sql1 = <<< SQL
-        insert into T02_Departamento values ("DAW","Desarrollo de aplicaciones web",now(),50.50,null),
+        insert into dbs12302420.T02_Departamento values ("DAW","Desarrollo de aplicaciones web",now(),50.50,null),
         ("SMR","Sistemas microinformarticos y redes",now(),1.50,null),
         ("PRE","Proyectos de edificacion",now(),150,null),
         ("DAM","Desarrollo de aplicaciones multiplataforma",now(),10.25,null),
