@@ -68,7 +68,7 @@
             </tr>
             <tr>
                 <td>2. Mostrar el contenido de la tabla Departamento y el número de registros</td>
-                <td><a href="codigoPHP/ejercicio02.php"><img src="webroot/image/play.png" alt="play"/></a></td>
+                <td><a href="codigoPHP/ejercicio02PDO.php"><img src="webroot/image/play.png" alt="play"/></a></td>
                 <td><a href="mostrarcodigo/muestraEjercicio02.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
                 <td><a href="codigoPHP/ejercicio02MySQLi.php"><img src="webroot/image/play.png" alt="play"/></a></td>
                 <td><a href="mostrarcodigo/muestraEjercicio02MySQLi.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
