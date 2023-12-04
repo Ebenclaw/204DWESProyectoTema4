@@ -207,7 +207,7 @@
     <footer>
         <div id="derechos">2023-2024 © Todos los derechos reservados: <a href="../../index.html">Rebeca Sánchez Pérez</a></div>
         <div id="fotos">
-            <a href="https://github.com/Ebenclaw" target="_blank"><img id="git" src="../webroot/image/GitHub.png" alt="GitHub"></a>
+            <a href="https://github.com/Ebenclaw/204DWESProyectoTema4" target="_blank"><img id="git" src="../webroot/image/GitHub.png" alt="GitHub"></a>
             <a href="http://ieslossauces.centros.educa.jcyl.es/sitio/" target="_blank"><img id="sauces" src="../webroot/image/sauces.png" alt="Sauces"></a>
             <a href="../indexProyectoTema4.php"><img id="home" src="../webroot/image/home.png" alt="Inicio"></a>
     </footer>
