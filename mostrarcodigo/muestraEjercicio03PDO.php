@@ -18,7 +18,7 @@
         <h2>Ejercicio 3</h2>
         <div class="ejercicio">
             <?php
-                highlight_file("../codigoPHP/ejercicio03.php");
+                highlight_file("../codigoPHP/ejercicio03PDO.php");
             ?>
         </div>
     </main>

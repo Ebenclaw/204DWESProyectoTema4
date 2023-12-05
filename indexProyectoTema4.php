@@ -75,8 +75,8 @@
             </tr>
             <tr>
                 <td>3. Formulario para añadir un departamento a la tabla Departamento con validación de entrada y control de errores</td>
-                <td><a href="codigoPHP/ejercicio03.php"><img src="webroot/image/play.png" alt="play"/></a></td>
-                <td><a href="mostrarcodigo/muestraEjercicio03.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
+                <td><a href="codigoPHP/ejercicio03PDO.php"><img src="webroot/image/play.png" alt="play"/></a></td>
+                <td><a href="mostrarcodigo/muestraEjercicio03PDO.php"><img src="webroot/image/ojo.png" alt="ojo"/></a></td>
                 <td></td>
                 <td></td>
             </tr>
